@@ -104,6 +104,8 @@ stock_simulator/
 ```
 
 ### Developer Information
-- SW융합대학 모바일시스템공학과 조민형
-- SW융합대학 컴퓨터공학과 신철민
-- SW융합대학 모바일시스템공학과 정승아
+| Developer | Role |
+|----------|------|
+| 조민형 / 신철민 | • Stock price fluctuation algorithm development |
+| 조민형 / 신철민 / 정승아 | • Trading system implementation<br>• Profit calculation functionality |
+| 신철민 / 정승아 | • User interface design (Login/Sign-up system) |
