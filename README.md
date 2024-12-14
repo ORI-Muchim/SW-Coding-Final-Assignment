@@ -103,7 +103,7 @@ stock_simulator/
     └── transactions.txt
 ```
 
-### 개발자 정보
+### Developer Information
 - SW융합대학 모바일시스템공학과 조민형
 - SW융합대학 컴퓨터공학과 신철민
 - SW융합대학 모바일시스템공학과 정승아
