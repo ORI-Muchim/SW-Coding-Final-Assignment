@@ -1,34 +1,34 @@
 # Stock Market Simulator
 
-주식 시장 시뮬레이션 프로그램입니다. 실제 주식 거래와 유사한 환경에서 모의 투자를 체험할 수 있습니다.
+A stock market simulation program that provides a realistic trading environment for practice investment.
 
 ## Prerequisites
 
-프로그램 실행을 위해 다음이 필요합니다:
+Required for program execution:
 
-- GCC 컴파일러
-- C 표준 라이브러리
-- Unix 기반 시스템 (Linux/MacOS) 또는 Windows
+- GCC compiler
+- C standard library
+- Unix-based system (Linux/MacOS) or Windows
 
 ## Installation
 
-1. 저장소 클론:
+1. Clone repository:
 ```bash
 git clone [repository-url]
 cd stock-simulator
 ```
 
-2. 프로그램 컴파일:
+2. Compile program:
 ```bash
 gcc -I. -o stock_simulator main.c user_system.c stock_system.c portfolio_system.c
 ```
 
-3. 초기 데이터 설정:
+3. Initial data setup:
 ```bash
-# trading_data 디렉토리 생성
+# Create trading_data directory
 mkdir -p trading_data
 
-# stocks.txt 파일 생성 및 초기 데이터 입력
+# Create stocks.txt file and input initial data
 cat > trading_data/stocks.txt << EOL
 005930 삼성전자 전자 72000 0.0
 035420 NAVER IT 220000 0.0
@@ -45,48 +45,48 @@ EOL
 
 ## Usage
 
-1. 프로그램 실행:
+1. Run program:
 ```bash
 ./stock_simulator
 ```
 
-2. 기본 기능:
-- 회원가입/로그인
-- 주식 목록 조회
-- 주식 검색
-- 매수/매도
-- 포트폴리오 관리
+2. Core Features:
+- Sign up/Login
+- View stock listings
+- Search stocks
+- Buy/Sell stocks
+- Portfolio management
 
-3. 데이터 파일:
-- `trading_data/users.txt`: 사용자 정보
-- `trading_data/stocks.txt`: 주식 정보
-- `trading_data/portfolio.txt`: 포트폴리오 정보
-- `trading_data/transactions.txt`: 거래 내역
+3. Data Files:
+- `trading_data/users.txt`: User information
+- `trading_data/stocks.txt`: Stock information
+- `trading_data/portfolio.txt`: Portfolio information
+- `trading_data/transactions.txt`: Transaction history
 
 ## Inference
 
-### 주식 거래 방법
-1. 로그인 후 메인 메뉴에서 "1. 주식 목록" 선택
-2. 거래하고자 하는 주식의 이름 입력
-3. 매수/매도 선택 후 수량 입력
+### Trading Process
+1. After login, select "1. Stock List" from main menu
+2. Enter the name of stock you want to trade
+3. Choose buy/sell and enter quantity
 
-### 거래 기록 형식
+### Transaction Record Format
 ```
 사용자ID 종목코드 거래유형 수량 가격 날짜
-예: user1 005930 B 10 72000 2024-12-14
+Example: user1 005930 B 10 72000 2024-12-14
 ```
-- 거래유형: B(매수), S(매도)
+- Transaction type: B(Buy), S(Sell)
 
-### 자동 업데이트
-- 주가는 1분마다 자동으로 -5%에서 +5% 범위 내에서 변동
-- 모든 거래 내역과 포트폴리오 정보는 실시간으로 파일에 저장
+### Automatic Updates
+- Stock prices automatically fluctuate between -5% and +5% every minute
+- All transaction records and portfolio information are saved in real-time
 
 ## References
 
-- C언어 Express 개정 4판
-- SW융합코딩2 8-9주차 강의자료 05-입출력.pdf
+- C Language Express 4th Edition
+- SW Convergence Coding 2 Course Materials
 
-### 프로젝트 구조
+### Project Structure
 ```
 stock_simulator/
 ├── main.c
