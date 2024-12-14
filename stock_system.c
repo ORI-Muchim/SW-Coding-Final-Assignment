@@ -80,7 +80,7 @@ struct Stock* getStock(const char* stockName) {
 void updateStockPrices(void) {
     srand(time(NULL));
     for (int i = 0; i < stockCount; i++) {
-        float change = (float)(rand() % 7 - 3) / 100.0f; // -3% to +3%
+        float change = (float)(rand() % 11 - 5) / 100.0f; // -5% to +5%
         stockList[i].daily_change = change * 100;
         stockList[i].current_price *= (1 + change);
     }

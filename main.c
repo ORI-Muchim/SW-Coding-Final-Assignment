@@ -52,8 +52,8 @@ int main(void) {
     loadStocks();
     
     while (1) {
-        // 매 5분마다 주가 업데이트
-        if (time(NULL) - lastUpdate > 300) {
+        // 매 1분마다 주가 업데이트
+        if (time(NULL) - lastUpdate > 60) {
             updateStockPrices();
             lastUpdate = time(NULL);
         }
