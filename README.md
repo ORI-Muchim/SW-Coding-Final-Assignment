@@ -15,7 +15,7 @@ Required for program execution:
 1. Clone repository:
 ```bash
 git clone https://github.com/ORI-Muchim/SW-Coding-Final-Assignment
-cd stock-simulator
+cd SW-Coding-Final-Assignment
 ```
 
 2. Compile program:
