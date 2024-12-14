@@ -2,18 +2,18 @@
 #ifndef STOCK_SYSTEM_H
 #define STOCK_SYSTEM_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-// Stock information structure
 struct Stock {
-    char name[50];    
-    int price;        
-    int change;       
+    char code[10];
+    char name[50];
+    char sector[30];
+    int current_price;
+    float daily_change;
 };
 
+void loadStocks(void);
 void showStockList(void);
 void searchStock(void);
+struct Stock* getStock(const char* stockName);
+void updateStockPrices(void);
 
 #endif
